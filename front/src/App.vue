@@ -11,6 +11,9 @@
       let recaptchaScript2 = document.createElement('script')
       recaptchaScript2.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js')
       document.head.appendChild(recaptchaScript2)
+      let recaptchaScript3 = document.createElement('script')
+      recaptchaScript3.setAttribute('src', 'https://kit.fontawesome.com/7ea6608266.js')
+      document.head.appendChild(recaptchaScript3)
     }
   }
 </script>

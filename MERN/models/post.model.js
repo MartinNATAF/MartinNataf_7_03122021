@@ -1,4 +1,4 @@
-const { DataTypes } = require("sequelize");
+const { DataTypes, ARRAY } = require("sequelize");
 
 module.exports = function(sequelize, DataTypes) {
     const Post = sequelize.define('posts', {

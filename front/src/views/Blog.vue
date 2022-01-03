@@ -6,7 +6,9 @@
     Créer un nouveau post
   </button>
   <div class="blog">
+    <img src="../assets/groupomania/icon.png" class="icon">
     <h1 class="m-5">Content de vous voir {{ name }}</h1>
+    <img src="../assets/groupomania/icon.png" class="icon">
   </div>
   <div :key="object.idUser" class="post" v-for="object in test" :id="object.id">
       <h2>{{ object.pseudo }}</h2>
@@ -19,7 +21,7 @@
       <video
         :src="require(`../assets/uploads${object.video}`)"
         controls
-        width="250"
+        width="400"
         v-if="object.video !== null"
       ></video>
       <div class="m-1"></div>
@@ -115,10 +117,19 @@ export default {
 </script>
 
 <style>
+.blog {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 200px;
+}
+
 .post {
   background-color: rgb(190, 190, 255);
   border-radius: 10px;
-  width: 300px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -126,6 +137,6 @@ export default {
 }
 
 .img_style {
-  width: 250px;
+  width: 400px;
 }
 </style>

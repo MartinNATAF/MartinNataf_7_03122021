@@ -4,12 +4,14 @@
   <h1>Votre Biographie actuelle : {{ Biographie }}</h1>
   <div class="form-floating m-3">
     <input
-      type="bio"
+      type="text"
       class="form-control"
-      id="floatingPassword"
+      id="floatingBiographie"
       placeholder="Biographie"
+      required
       v-model="bio"
     />
+    <label for="floatingBiographie">votre biographie</label>
   </div>
   <h1>{{ update }}</h1>
   <button @click="edit" class="btn btn-primary m-3" type="submit">
@@ -33,7 +35,7 @@ export default {
       name: null,
       email: null,
       bio: null,
-      update: "",
+      update: "En attente de mise à jour !",
     };
   },
   methods: {

@@ -1,4 +1,4 @@
-<template>
+<template lang="fr">
   <router-view/>
 </template>
 
@@ -14,6 +14,10 @@
       let recaptchaScript3 = document.createElement('script')
       recaptchaScript3.setAttribute('src', 'https://kit.fontawesome.com/7ea6608266.js')
       document.head.appendChild(recaptchaScript3)
+    },
+    created() {
+      const html = document.documentElement // returns the html tag
+      html.setAttribute('lang', 'fr')
     }
   }
 </script>

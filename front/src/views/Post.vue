@@ -12,8 +12,8 @@
       <label for="floatingInput">message</label>
     </div>
     <div>
-      <label for="profile_pic">Choisissez le fichier à téléverser</label>
-      <input type="file" id="file" ref="file" v-on:change="handleFileUpload()"/>
+      <label for="file">Choisissez le fichier à téléverser</label>
+      <input class="form-control" type="file" id="file" ref="file" v-on:change="handleFileUpload()"/>
     </div>
     <div class="col-12">
       <button v-on:click="submitFile()" class="btn btn-primary" type="submit">

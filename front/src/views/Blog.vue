@@ -6,9 +6,9 @@
     Créer un nouveau post
   </button>
   <div class="blog">
-    <img src="../assets/groupomania/icon.png" class="icon">
+    <img src="../assets/groupomania/icon.png" class="icon" alt="image groupomania">
     <h1 class="m-5">Content de vous voir {{ name }}</h1>
-    <img src="../assets/groupomania/icon.png" class="icon">
+    <img src="../assets/groupomania/icon.png" class="icon" alt="image groupomania">
   </div>
   <div :key="object.idUser" class="post" v-for="object in test" :id="object.id">
       <h2>{{ object.pseudo }}</h2>
@@ -17,6 +17,7 @@
         :src="require(`../assets/uploads${object.picture}`)"
         v-if="object.picture !== null"
         class="img_style"
+        alt="image"
       />
       <video
         :src="require(`../assets/uploads${object.video}`)"

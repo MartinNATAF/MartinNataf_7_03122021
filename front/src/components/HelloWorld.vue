@@ -31,7 +31,7 @@
               Se connecter
             </button>
           </div>
-          <img src="../assets/groupomania/icon-left-font.png" class="logo">
+          <img src="../assets/groupomania/icon-left-font.png" class="logo" alt="image groupomania">
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@
             required
             v-model="username"
           />
-          <label for="floatingInput">{{ Username }}</label>
+          <label>{{ Username }}</label>
         </div>
         <div class="form-floating m-3">
           <input
@@ -56,7 +56,7 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      Enregistrement: "",
+      Enregistrement: "Bienvenue",
       Username: "Pseudo",
       Email: "Adresse email",
       Password: "Mot de passe",
